@@ -78,8 +78,11 @@ esac
 
 else
 
+# don't send this again if bg loop already done this when it was stuck in sleep
+if [ ! -e /tmp/abort.txt ]; then
 tg "Stop Compiling $build_type To Collect Cache
 Status: $progress"
+fi
 
 fi
 
