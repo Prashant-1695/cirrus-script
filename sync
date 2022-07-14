@@ -13,10 +13,10 @@ repo init --depth=1 --no-repo-verify -u https://github.com/SuperiorOS/manifest.g
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 
 # local manifest
-git clone --depth=1 https://github.com/Prashant-1695/local_manifest.git -b superior .repo/local_manifests
-#git clone --depth=1 https://github.com/$CIRRUS_REPO_OWNER/device_xiaomi_lavender -b x device/xiaomi/lavender
-#git clone --depth=1 https://github.com/$CIRRUS_REPO_OWNER/vendor_xiaomi_lavender -b x vendor/xiaomi/lavender
-#git clone --depth=1 https://github.com/$CIRRUS_REPO_OWNER/kernel_xiaomi_lavender -b x kernel/xiaomi/lavender
+#git clone --depth=1 https://github.com/Prashant-1695/local_manifest.git -b superior .repo/local_manifests
+git clone --depth=1 https://github.com/$CIRRUS_REPO_OWNER/android_device_xiaomi_lavender -b 12.1 device/xiaomi/lavender
+git clone --depth=1 https://github.com/$CIRRUS_REPO_OWNER/android_vendor_xiaomi_lavender -b 12.1 vendor/xiaomi/lavender
+git clone --depth=1 https://github.com/$CIRRUS_REPO_OWNER/nexus_kernel_xiaomi_lavender -b qti kernel/xiaomi/lavender
 
 tg "Cloned all Sources Successfully!
 Time Took: $(($SECONDS / 60)) minute(s) and $(($SECONDS % 60)) second(s).
