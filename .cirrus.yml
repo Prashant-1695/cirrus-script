@@ -8,7 +8,7 @@ env: # Environment variables to pass to all tasks
     chat_id: "ENCRYPTED[!c519abe30864df229179faa4e1eeaa0fde992d896ed620d45cb1f2ca25f0ee3b9373d08fb64a737c8759ae592ef9351c!]"
 
 # store information about git here
-    gmail: xyz@gmail.com
+    gmail: prashant33968@gmail.com
 
 task:
     name: aosp
