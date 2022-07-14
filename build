@@ -4,6 +4,8 @@ cd /tmp/rom # Depends on where source got synced
 
 # Normal build steps
 . build/envsetup.sh
+export BUILD_WITH_GAPPS=true
+export SELINUX_IGNORE_NEVERALLOWS=true
 lunch $lunch_device
 case "$build_type" in
 		 R|r)
