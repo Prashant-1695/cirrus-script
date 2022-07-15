@@ -2,5 +2,5 @@
 
 # Normal build steps
 . build/envsetup.sh
-lunch superior_lavender-userdebug
-make bacon -j$(nproc --all)
+lunch lineage_lavender-userdebug
+mka bacon -j$(nproc --all)
