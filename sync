@@ -7,14 +7,14 @@ cd /tmp/rom
 SECONDS=0
 
 # Sync source
-repo init --depth=1 --no-repo-verify -u https://github.com/crdroidandroid/android.git -b 12.1 -g default,-mips,-darwin,-notdefault
+repo init --depth=1 --no-repo-verify -u https://github.com/DerpFest-12/manifest.git -b 12.1 -g default,-mips,-darwin,-notdefault
 
 # Sync source without unnecessary messages, try with -j30 first, if fails, it will try again
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 
 # local manifest
 #git clone --depth=1 https://github.com/Prashant-1695/local_manifest.git -b superior .repo/local_manifests
-git clone --depth=1 https://github.com/crdroidandroid/android_device_xiaomi_lavender -b 12.1 device/xiaomi/lavender
+git clone --depth=1 https://github.com/$CIRRUS_REPO_OWNER/android_device_xiaomi_lavender -b derp device/xiaomi/lavender
 git clone --depth=1 https://github.com/$CIRRUS_REPO_OWNER/android_vendor_xiaomi_lavender -b 12.1 vendor/xiaomi/lavender
 git clone --depth=1 https://github.com/crdroidandroid/android_kernel_xiaomi_lavender -b qti kernel/xiaomi/lavender
 
