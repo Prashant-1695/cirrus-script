@@ -4,4 +4,4 @@
 . build/envsetup.sh
 lunch superior_lavender-userdebug
 . extras.sh # export flags
-make bacon -j8
+make bacon -j$(nproc --all)
