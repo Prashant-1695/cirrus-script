@@ -3,12 +3,12 @@ env: # Environment variables to pass to all tasks
     CIRRUS_WORKING_DIR: "/tmp/ci" # Where to clone the aosp-builder repo
 
 # store our secrets here
-    github_token: "ENCRYPTED[!82ee7e07446c86fe97dda507543443a525fec83e693679c8f84d740764987310d74262013f45a1e5a56cc54e334e8f7c!]"
-    bot_api: "ENCRYPTED[!10482e25ca82cf0efa74e4c474a9e5cb82c1b2e5545657dd1917cba34aa08ce880b37bef99a47d0a49c4bb48523144b9!]"
-    chat_id: "ENCRYPTED[!c519abe30864df229179faa4e1eeaa0fde992d896ed620d45cb1f2ca25f0ee3b9373d08fb64a737c8759ae592ef9351c!]"
+    github_token: "ENCRYPTED[cc86074026b16fb7819b0a9f2e59032aedd07bd89ce0d61e871deb96da541046dba4e49212a8f064c7f93d081ea4a5ae]"
+    bot_api: "ENCRYPTED[e8d3af4de332a32d6e83ddf59ab481c8cc6052fe79b762346ca082c63e852a4524eea1f1800cc52d3d9206265396ab19]"
+    chat_id: "ENCRYPTED[d860dda2f7fd828a459ac9d13069e94a8f361c4550d1a963af715ea06ce85f61ebdc9acd3decb425e2f44f955543ded4]"
 
 # store information about git here
-    gmail: xyz@gmail.com
+    gmail: prashant33968@gmail.com
     
 # User Version ( dont touch )
     user_version: 1 # lets start from 1
