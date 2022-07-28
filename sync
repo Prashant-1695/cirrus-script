@@ -23,7 +23,7 @@ repo init --depth=1 --no-repo-verify -u https://github.com/crdroidandroid/androi
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 
 # local manifest
-git clone --depth=1 https://$CIRRUS_REPO_OWNER:$gh_token@github.com/$CIRRUS_REPO_OWNER/device_xiaomi_lavender -b 12.1 device/xiaomi/lavender
+git clone --depth=1 https://$CIRRUS_REPO_OWNER:$github_token@github.com/$CIRRUS_REPO_OWNER/device_xiaomi_lavender -b 12.1 device/xiaomi/lavender
 git clone --depth=1 https://github.com/$CIRRUS_REPO_OWNER/android_vendor_xiaomi_lavender -b 12.1 vendor/xiaomi/lavender
 git clone --depth=1 https://github.com/$CIRRUS_REPO_OWNER/nexus_kernel_xiaomi_lavender -b a12-qti kernel/xiaomi/lavender
 
