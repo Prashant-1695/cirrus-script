@@ -25,7 +25,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 # local manifest
 git clone --depth=1 https://$CIRRUS_REPO_OWNER:$github_token@github.com/$CIRRUS_REPO_OWNER/device_xiaomi_lavender -b 12.1 device/xiaomi/lavender
 git clone --depth=1 https://github.com/$CIRRUS_REPO_OWNER/android_vendor_xiaomi_lavender -b 12.1 vendor/xiaomi/lavender
-git clone --depth=1 https://github.com/$CIRRUS_REPO_OWNER/nexus_kernel_xiaomi_lavender -b a12-qti kernel/xiaomi/lavender
+git clone --depth=1 https://github.com/projects-nexus/nexus_kernel_xiaomi_lavender -b qti kernel/xiaomi/lavender
 
 tg "$rom_name source sync completed!
 Total Size: $(du -sh /tmp/rom | cut -d - -f 1 | cut -d / -f 1)
