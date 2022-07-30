@@ -1,6 +1,6 @@
 # Normal build steps
 . build/envsetup.sh
-lunch lineage_lavender-userdebug
+lunch kscope_lavender-userdebug
 
 # export variable here
 export TZ=Asia/Kolkata
@@ -10,5 +10,5 @@ export BUILD_USERNAME=ImPrashantt
 export BUILD_HOSTNAME=Ubuntu
 
 compile_plox () {
-make bacon -j$(nproc --all)
+mka bacon -j$(nproc --all)
 }
